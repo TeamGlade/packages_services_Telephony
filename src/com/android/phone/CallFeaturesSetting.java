@@ -1527,7 +1527,7 @@ public class CallFeaturesSetting extends PreferenceActivity
                             mPhone.getContext(),
                             mVoicemailRingtoneLookupComplete,
                             RingtoneManager.TYPE_NOTIFICATION,
-                            mVoicemailNotificationRingtone,
+                            mVoicemailNotificationRingtone.getKey(),
                             MSG_UPDATE_VOICEMAIL_RINGTONE_SUMMARY);
                 }
             }
