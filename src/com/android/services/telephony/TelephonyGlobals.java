@@ -121,14 +121,6 @@ public class TelephonyGlobals {
                         } else {
                             mDisplayName = notificationText;
                         }
-                        if (notificationText != null && !notificationText.isEmpty()) {
-                            final String history =(mSsNotification[phoneId].history != null
-                                    && mSsNotification[phoneId].history.length > 0) ?
-                                    " History: " + Arrays.toString
-                                            (mSsNotification[phoneId].history) : "";
-                            Toast.makeText(TelephonyGlobals.getApplicationContext(),
-                                    mDisplayName + history, Toast.LENGTH_LONG).show();
-                        }
                     } else {
                         Log.v(LOG_TAG,
                                 "MSG_SUPP_SERVICE_NOTIFY event processing failed");

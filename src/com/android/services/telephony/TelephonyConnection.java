@@ -154,13 +154,6 @@ abstract class TelephonyConnection extends Connection {
                         } else {
                             mDisplayName = notificationText;
                         }
-                        if (notificationText != null && !notificationText.isEmpty()) {
-                            final String history =(mSsNotification.history != null
-                                    && mSsNotification.history.length > 0) ?
-                                    " History: " + Arrays.toString(mSsNotification.history) : "";
-                            Toast.makeText(TelephonyGlobals.getApplicationContext(),
-                                    mDisplayName + history, Toast.LENGTH_LONG).show();
-                        }
                     } else {
                         Log.v(TelephonyConnection.this,
                                 "MSG_SUPP_SERVICE_NOTIFY event processing failed");
